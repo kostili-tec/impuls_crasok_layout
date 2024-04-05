@@ -91,7 +91,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -102,6 +103,7 @@ body {
 
 a {
   color: var(--font-black);
+  -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 a:hover {
@@ -114,12 +116,22 @@ a:hover {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 128px;
+  height: 114px;
+  padding-top: 10px;
   margin: auto;
 }
 .header a {
@@ -127,17 +139,28 @@ a:hover {
 }
 
 .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 36px;
 }
 .header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   list-style: none;
   gap: 43px;
   padding-left: 0;
@@ -147,7 +170,8 @@ a:hover {
   width: 1px;
   height: 22px;
   background-color: rgba(0, 0, 0, 0.2);
-  transform: translate(18px, 13px);
+  -webkit-transform: translate(18px, 13px);
+          transform: translate(18px, 13px);
 }
 
 .header-phones {
@@ -157,4 +181,75 @@ a:hover {
 
 .header-search {
   cursor: pointer;
+}
+
+.main {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main-hero {
+  width: 100%;
+  height: 629px;
+  background-image: url("../../assets/bg/impuls-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: var(--font-dark);
+}
+
+.main-hero__headers {
+  padding-top: 192px;
+}
+
+.main-hero__head1 {
+  font-size: 64px;
+  line-height: 150%;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.main-hero__head2 {
+  font-weight: 500;
+  font-size: 36px;
+  max-width: 484px;
+  line-height: 150%;
+}
+
+.main-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px auto 25px;
+  margin-top: 40px;
+}
+
+.advantages-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.advantages-item__img {
+  width: 50px;
+  height: 50px;
 }/*# sourceMappingURL=style.css.map */

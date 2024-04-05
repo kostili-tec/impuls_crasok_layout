@@ -5,13 +5,22 @@
           "extensionName": ".css",
           "savePath": "/css"
       },
-      {
-          "extensionName": ".min.css",
-          "format": "compressed",
-          "savePath": "/css/min"
-      }
+    //   {
+    //       "extensionName": ".min.css",
+    //       "format": "compressed",
+    //       "savePath": "/css/min"
+    //   }
   ],
   "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.includeItems": [
+    "**/styles/*.scss",
+    "**/styles/sections/*.scss",
+    "**/styles/base/*.scss",
+    "**/styles/variables/*.scss"
+ ],
+
   "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.autoprefix": ["defaults"]
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "liveSassCompile.settings.forceBaseDirectory": ["**/styles/*"],
+  "liveSassCompile.settings.useNewCompiler": true,
 }
