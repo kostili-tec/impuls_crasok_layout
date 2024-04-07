@@ -242,4 +242,30 @@
 
 .catalog-item__info h4 {
   margin-bottom: 6px;
+}
+
+.main-individual {
+  margin: 0 auto;
+}
+
+.individual-hero {
+  background-image: url("../assets/bg/individual-bg.jpeg");
+  background-position: center center;
+  width: 100%;
+  height: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+  margin-top: 106px;
+}
+.individual-hero h2 {
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--font-dark);
+  font-weight: 600;
+  letter-spacing: 0%;
 }/*# sourceMappingURL=main.css.map */
