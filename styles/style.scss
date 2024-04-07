@@ -4,3 +4,55 @@
 @import "./sections/header.scss";
 @import "./sections/main.scss";
 
+.footer {
+  // margin: 0 auto;
+  width: 100%;
+  background-color: var(--footer);
+  padding-top: 90px;
+}
+
+.footer_top {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 385px;
+}
+
+.contact-form__input-text {
+  border: none;
+  border-bottom: 1px solid var(--font-dark);
+  height: 50px;
+  background-color: var(--footer);
+  padding-left: 5px;
+}
+
+.contact-form__input-button {
+  height: 50px;
+  background-color: rgb(187, 144, 120);
+  border: none;
+  color: white;
+  font-style: 16px;
+  font-weight: 600;
+  line-height: 180%;
+  letter-spacing: 0%;
+  margin-top: 20px;
+}
+.footer-menu {
+  h5 {
+    margin-top: 0;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+  }
+}
