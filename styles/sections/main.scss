@@ -53,3 +53,168 @@
   width: 50px;
   height: 50px;
 }
+
+.main-catalog {
+  margin: 0 auto;
+}
+
+.catalog-items__top {
+  display: grid;
+  grid-template-columns: repeat(3, 386px);
+  grid-template-rows: repeat(3, 210px);
+  justify-items: center;
+  gap: 20px 20px;
+  grid-template-areas:
+    "A B C"
+    "A D E"
+    "G F E";
+  .catalog-item:first-child {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-top: 130px;
+    .catalog-item__info {
+      align-self: flex-start;
+    }
+    .catalog-item__image-container {
+      // max-width: 340px;
+      img {
+        max-width: 270px;
+        max-height: 200px;
+      }
+    }
+  }
+
+  .catalog-item:nth-child(1) {
+    grid-area: A;
+  }
+
+  // масла BORMA
+  .catalog-item:nth-child(2) {
+    grid-area: B;
+    .catalog-item__image-container {
+      img {
+        max-height: 140px;
+      }
+    }
+  }
+
+  // патины
+  .catalog-item:nth-child(3) {
+    grid-area: C;
+    .catalog-item__image-container {
+      img {
+        max-height: 140px;
+      }
+    }
+  }
+
+  // морилки
+  .catalog-item:nth-child(4) {
+    grid-area: D;
+    gap: 76px;
+    img {
+      max-height: 140px;
+    }
+  }
+
+  // клей
+  .catalog-item:nth-child(5) {
+    grid-area: E;
+    img {
+      max-height: 320px;
+    }
+  }
+
+  // средства инд защиты
+  .catalog-item:nth-child(6) {
+    grid-area: G;
+    flex-direction: column-reverse;
+    gap: 0px;
+    .catalog-item__info {
+      align-self: flex-start;
+    }
+  }
+
+  // полировальные системы
+  .catalog-item:nth-child(7) {
+    grid-area: F;
+    gap: 20px;
+    img {
+      max-height: 150px;
+    }
+  }
+}
+
+.catalog-items__bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-between;
+  .catalog-item {
+    width: 285px;
+    height: 210px;
+  }
+  .catalog-item:nth-child(1) {
+    gap: 15px;
+    img {
+      max-height: 150px;
+    }
+  }
+  .catalog-item:nth-child(2) {
+    flex-direction: column-reverse;
+    gap: 0;
+    .catalog-item__info {
+      align-self: flex-start;
+      h4 {
+        margin-top: 10px;
+      }
+    }
+  }
+  .catalog-item:nth-child(3) {
+    gap: 0;
+    img {
+      max-height: 150px;
+    }
+  }
+  .catalog-item:nth-child(4) {
+    flex-direction: column-reverse;
+    gap: 0;
+    .catalog-item__info {
+      align-self: flex-start;
+    }
+    img {
+      max-height: 80px;
+    }
+  }
+}
+
+.catalog-item {
+  width: 386px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fdf8f5;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px;
+  gap: 40px;
+  .catalog-item__info {
+    align-self: flex-end;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.catalog-item__image-container {
+  max-width: 370px;
+  img {
+    max-width: 200px;
+    max-height: 100px;
+  }
+}
+
+.catalog-item__info {
+  h4 {
+    margin-bottom: 6px;
+  }
+}

@@ -1,75 +1,9 @@
-@import './variables/fonts.scss';
-@import './variables/global.scss';
-@import './base/base.scss';
-@import './sections/header.scss';
-@import './sections/main.scss';
+@import "./variables/fonts.scss";
+@import "./variables/global.scss";
+@import "./base/base.scss";
+@import "./sections/header.scss";
+@import "./sections/main.scss";
 
 .bold {
   font-weight: bold;
-}
-
-.main-catalog {
-  margin: 0 auto;
-}
-
-.catalog-item {  
-  width: 386px;
-  display: flex;
-  flex-direction: column;
-  background-color: #FDF8F5;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-}
-
-.catalog-items__top {
-  display: grid;
-  grid-template-columns: repeat(3, 386px);
-  grid-template-rows: repeat(3, 210px);
-  justify-items: center;
-  gap: 20px 20px;
-  grid-template-areas:
-    "A B C"
-    "A D E"
-    "G F E"
-  }
-
-.catalog-items__bottom {
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  justify-content: space-between;
-  .catalog-item {
-    width: 285px;
-  }
-}
-
-.catalog-item:nth-child(1) { grid-area: A; }
-
-.catalog-item:nth-child(2) { grid-area: B; }
-
-.catalog-item:nth-child(3) { grid-area: C; }
-
-.catalog-item:nth-child(4) { grid-area: D; }
-
-.catalog-item:nth-child(5) { grid-area: E; }
-
-.catalog-item:nth-child(6) { grid-area: G; }
-
-.catalog-item:nth-child(7) { grid-area: F; }
-
-
-
-.catalog-item:first-child {
-  // grid-row-end: span 2; /* Занимает две строки */
-  justify-content: space-between;
-}
-
-
-.catalog-item__image-container {
-  max-width: 370px;
-  img {
-    max-width: 200px;
-    max-height: 100px;
-  }
 }
