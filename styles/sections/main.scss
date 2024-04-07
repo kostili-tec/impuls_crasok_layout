@@ -301,3 +301,39 @@
   letter-spacing: 0%;
   font-size: 12px;
 }
+
+.section-contacts {
+  margin: 0 auto;
+}
+
+.contacts-container {
+  margin: 120px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts-info__head {
+  margin-bottom: 50px;
+}
+
+.contacts-info__data {
+  display: flex;
+  flex-direction: column;
+  color: var(--font-dark);
+  a {
+    color: var(--font-dark);
+    line-height: 180%;
+    &:hover {
+      color: var(--font-black);
+      font-weight: 500;
+    }
+  }
+}
+
+.contacts-info__social {
+  a {
+    margin-right: 17px;
+  }
+}
