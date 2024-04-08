@@ -430,3 +430,50 @@
   gap: 21px;
   margin-top: 60px;
 }
+
+.stocks-section {
+  margin-top: 80px;
+}
+
+.stock-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.stock-item {
+  height: 440px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 37px;
+  padding-left: 31px;
+  &:nth-child(1) {
+    width: 683px;
+    background-image: url("../assets/stocks/Frame 3542.jpg");
+  }
+  &:nth-child(2) {
+    background-image: url("../assets/stocks/Frame 3545.jpg");
+    width: 488px;
+  }
+  &:nth-child(3) {
+    background-image: url("../assets/stocks/Frame 3546.jpg");
+    background-size: cover;
+    flex: 1;
+  }
+  p {
+    font-weight: 500;
+    margin: 0;
+  }
+  h4 {
+    font-weight: 600;
+    margin: 8px 0 16px;
+    font-size: 28px;
+  }
+}

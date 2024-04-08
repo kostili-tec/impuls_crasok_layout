@@ -519,4 +519,68 @@
           flex-direction: row;
   gap: 21px;
   margin-top: 60px;
+}
+
+.stocks-section {
+  margin-top: 80px;
+}
+
+.stock-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stock-item {
+  height: 440px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 37px;
+  padding-left: 31px;
+}
+.stock-item:nth-child(1) {
+  width: 683px;
+  background-image: url("../assets/stocks/Frame 3542.jpg");
+}
+.stock-item:nth-child(2) {
+  background-image: url("../assets/stocks/Frame 3545.jpg");
+  width: 488px;
+}
+.stock-item:nth-child(3) {
+  background-image: url("../assets/stocks/Frame 3546.jpg");
+  background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.stock-item p {
+  font-weight: 500;
+  margin: 0;
+}
+.stock-item h4 {
+  font-weight: 600;
+  margin: 8px 0 16px;
+  font-size: 28px;
 }/*# sourceMappingURL=main.css.map */
