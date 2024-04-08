@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Контакты | Импуль красок</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header-left">
+        <a href="/">
+          <img src="../assets/logo_header.png" alt="Импуль красок" class="header-logo" />
+        </a>
+      </div>
+      <div class="header-right">
+        <nav class="header-menu">
+          <ul>
+            <li><a href>Каталог</a></li>
+            <li><a href>О компании</a></li>
+            <li><a href>Акции</a></li>
+            <li><a href>Контакты</a></li>
+            <li class="header-phones">
+              <a href="tel:+79184322618">+7 (918) 432-26-18</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-search">
+          <img src="../assets/icons/search.svg" alt="поиск" />
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main-title">
+        <div class="container">
+          <div class="page-title__section">
+            <nav class="page-title__breadcumbs">
+              <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about">Контакты</a></li>
+              </ul>
+            </nav>
+            <h1>Контакты</h1>
+          </div>
+        </div>
+      </section>
+      <section class="section-contacts container">
+        <div class="contacts-container contacts-page__contacts-container">
+          <div class="contacts-info">
+            <div class="contacts-info__data contacts-page__info">
+              <div>
+                <h4>Адрес</h4>
+                <p>г. Краснодар, ул. Уральская, 147/6</p>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:info@impuls-krasok.ru">info@impuls-krasok.ru</a></p>
+              </div>
+              <div class="contacts-page__info-tel">
+                <h4>Телефон</h4>
+                <a href="tel:+">+7(918) 432-26-18</a>
+                <a href="tel:+">+7(918) 687-52-37</a>
+                <a href="tel:+">+7(918) 653-18-67</a>
+              </div>
+              <div>
+                <h4>Социальные сети</h4>
+                <div class="contacts-info__social">
+                  <a href="http://"><img src="../assets/social/whatsapp.png" alt="whatsApp" /></a>
+                  <a href="http://"><img src="../assets/social/telegram.png" alt="telegram" /></a>
+                  <a href="http://"><img src="../assets/social/vk.png" alt="VK" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts-map">
+            <div style="position: relative; overflow: hidden">
+              <a
+                href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"
+                style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+                >Краснодар</a
+              ><a
+                href="https://yandex.ru/maps/35/krasnodar/house/uralskaya_ulitsa_147_6/Z0AYdwVgTUYBQFpvfXx1dXxlbQ==/?ll=39.120436%2C45.044069&utm_medium=mapframe&utm_source=maps&z=17.11"
+                style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+                >Уральская улица, 147/6 — Яндекс Карты</a
+              ><iframe
+                src="https://yandex.ru/map-widget/v1/?ll=39.120436%2C45.044069&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM4ODY4NBJG0KDQvtGB0YHQuNGPLCDQmtGA0LDRgdC90L7QtNCw0YAsINCj0YDQsNC70YzRgdC60LDRjyDRg9C70LjRhtCwLCAxNDcvNiIKDVR7HEIVIS00Qg%2C%2C&z=17.11"
+                class="map-iframe map-iframe__contacts-page"
+                frameborder="0"
+                allowfullscreen="true"
+                style="position: relative"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top container">
+        <a href="/">
+          <img src="../assets/logo_header.png" alt="Импульс красок" />
+        </a>
+        <nav class="footer-menu">
+          <h5>Меню</h5>
+          <ul>
+            <li><a href>Каталог</a></li>
+            <li><a href>О компании</a></li>
+            <li><a href>Акции</a></li>
+            <li><a href>Контакты</a></li>
+          </ul>
+        </nav>
+        <form class="contact-form" action="">
+          <span><b>Остались вопросы?</b> Напишите нам</span>
+          <input class="contact-form__input-text" type="text" name="" id="" placeholder="Как вас зовут?" />
+          <input class="contact-form__input-text" type="tel" name="" id="" placeholder="Ваш номер телефона" />
+          <input class="contact-form__input-button" type="button" value="Отправить" />
+          <div class="contact-form__checkbox-container">
+            <input class="contact-form__input-checkbox" type="checkbox" name="" id="consent" />
+            <label for="consent">
+              <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5.5L6.58401 13.0547L14.584 0.5" stroke="black" />
+              </svg>
+              Я даю свое согласие на обработку моих<br />персональных данных</label
+            >
+          </div>
+        </form>
+      </div>
+      <div class="footer-bottom container">
+        <div class="footer-bottom__border">
+          <span>©2024 Все права защищены <b>ИМПУЛЬС КРАСОК</b></span>
+          <a href="">
+            <span>Политика конфиденциальности</span>
+          </a>
+          <div class="footer-delta">
+            <a href="https://delta-ltd.ru/">
+              <img src="../assets/icons/delta-ltd.png" alt="delta-ltd" />
+              <div>
+                <span>Продвижение сайтов</span>
+                <br />
+                <span>www.delta-ltd.ru</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

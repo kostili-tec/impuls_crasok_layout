@@ -607,10 +607,10 @@ h3 {
 .contacts-info__data a {
   color: var(--font-dark);
   line-height: 180%;
-}
-.contacts-info__data a:hover {
-  color: var(--font-black);
-  font-weight: 500;
+  /* &:hover {
+    color: var(--font-black);
+    font-weight: 500;
+  } */
 }
 
 .contacts-info__social a {
@@ -620,7 +620,7 @@ h3 {
 .main-title {
   background-image: url("../assets/bg/page-title-bg.png");
   background-position: center center;
-  height: 216px;
+  padding-bottom: 50px;
   padding-left: 150px;
   margin: 0 auto;
 }
@@ -794,6 +794,38 @@ h3 {
   font-weight: 600;
   margin: 8px 0 16px;
   font-size: 28px;
+}
+
+.contacts-page__contacts-container {
+  margin-top: 80px;
+}
+
+.contacts-page__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 500px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 95px;
+}
+.contacts-page__info .contacts-page__info-tel a {
+  display: block;
+}
+.contacts-page__info .contacts-info__social {
+  min-width: 180px;
+}
+
+.map-iframe__contacts-page {
+  width: 590px;
+  height: 469px;
 }
 
 .footer {
