@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Inder";
   src: local("Inder"), local("Inder-Regular"), url("../../assets/fonts/Inder-Regular.ttf") format("truetype");
@@ -606,6 +607,50 @@ h3 {
 
 .contacts-info__social a {
   margin-right: 17px;
+}
+
+.main-page__title {
+  background-image: url("../assets/bg/page-title-bg.png");
+  background-position: center center;
+  height: 216px;
+  padding-left: 150px;
+  margin: 0 auto;
+}
+.main-page__title .page-title__section {
+  padding-top: 50px;
+}
+.main-page__title .page-title__breadcumbs ul {
+  font-family: "Raleway";
+  font-size: 14px;
+  color: var(--font-dark);
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin: 0;
+}
+.main-page__title .page-title__breadcumbs li:not(:last-child)::after {
+  content: "»";
+  margin: 0 5px;
+}
+.main-page__title h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 8px 0 0;
+}
+.main-page__title p {
+  line-height: 180%;
+  margin: 0;
 }
 
 .footer {
