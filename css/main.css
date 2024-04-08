@@ -63,6 +63,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+  min-width: 248px;
 }
 
 .advantages-item__img {
@@ -405,17 +406,17 @@
   margin-right: 17px;
 }
 
-.main-page__title {
+.main-title {
   background-image: url("../assets/bg/page-title-bg.png");
   background-position: center center;
   height: 216px;
   padding-left: 150px;
   margin: 0 auto;
 }
-.main-page__title .page-title__section {
+.main-title .page-title__section {
   padding-top: 50px;
 }
-.main-page__title .page-title__breadcumbs ul {
+.main-title .page-title__breadcumbs ul {
   font-family: "Raleway";
   font-size: 14px;
   color: var(--font-dark);
@@ -433,18 +434,89 @@
   list-style: none;
   margin: 0;
 }
-.main-page__title .page-title__breadcumbs li:not(:last-child)::after {
+.main-title .page-title__breadcumbs li:not(:last-child)::after {
   content: "»";
   margin: 0 5px;
 }
-.main-page__title h1 {
+.main-title h1 {
   text-transform: uppercase;
   font-size: 48px;
   font-weight: 700;
   line-height: 150%;
   margin: 8px 0 0;
 }
-.main-page__title p {
+.main-title p {
   line-height: 180%;
   margin: 0;
+}
+
+.about-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-info__item p {
+  line-height: 180%;
+}
+
+.about-advantages {
+  padding-top: 36px;
+  margin-bottom: 60px;
+}
+.about-advantages .advantages-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0;
+}
+.about-advantages .advantages-item:nth-child(2) {
+  padding-left: 30px;
+}
+.about-advantages .advantages-item:nth-child(3) {
+  padding-right: 20px;
+}
+.about-advantages .advantages-item p {
+  line-height: 160%;
+  margin: 6px 0;
+}
+
+.about-clients {
+  margin: 0 auto;
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-clients h2 {
+  margin: 0;
+}
+
+.about-clients__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 21px;
+  margin-top: 60px;
 }/*# sourceMappingURL=main.css.map */
