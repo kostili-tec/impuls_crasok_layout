@@ -1047,7 +1047,7 @@ h3 {
   border-bottom: 1px solid rgb(240, 240, 240);
   padding-bottom: 10px;
 }
-.filters-left__head h4 {
+.filters-left__head h3 {
   font-weight: 600;
   font-size: 22px;
   margin: 0 0 5px;
@@ -1173,6 +1173,20 @@ h3 {
   left: -38px;
   top: 4px;
   stroke-dasharray: 33;
+}
+
+.filters-brand {
+  padding-top: 20px;
+}
+.filters-brand h4 {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.filter__checkbox-items {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 145px;
 }
 
 .catalog-container__items {
