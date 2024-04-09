@@ -605,6 +605,9 @@
           justify-content: space-between;
   padding-top: 95px;
 }
+.contacts-page__info p {
+  line-height: 180%;
+}
 .contacts-page__info .contacts-page__info-tel a {
   display: block;
 }
