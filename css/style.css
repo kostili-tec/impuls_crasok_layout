@@ -227,6 +227,7 @@ h3 {
 
 .main-hero__headers {
   padding-top: 192px;
+  margin: 0 auto;
 }
 
 .main-hero__head1 {
@@ -623,10 +624,10 @@ h3 {
   background-position: center center;
   padding-bottom: 50px;
   max-height: 216px;
-  padding-left: 150px;
   margin: 0 auto;
 }
 .main-title .page-title__section {
+  margin: 0 auto;
   padding-top: 50px;
 }
 .main-title .page-title__breadcumbs ul {

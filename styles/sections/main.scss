@@ -14,7 +14,7 @@
 
 .main-hero__headers {
   padding-top: 192px;
-  // padding-left: 350px;
+  margin: 0 auto;
 }
 
 .main-hero__head1 {
@@ -344,9 +344,9 @@
   background-position: center center;
   padding-bottom: 50px;
   max-height: 216px;
-  padding-left: 150px;
   margin: 0 auto;
   .page-title__section {
+    margin: 0 auto;
     padding-top: 50px;
   }
   .page-title__breadcumbs {
@@ -496,7 +496,6 @@
     a {
       display: block;
     }
-
   }
   .contacts-info__social {
     min-width: 180px;
