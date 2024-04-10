@@ -410,6 +410,7 @@
   background-image: url("../assets/bg/page-title-bg.png");
   background-position: center center;
   padding-bottom: 50px;
+  max-height: 216px;
   padding-left: 150px;
   margin: 0 auto;
 }
