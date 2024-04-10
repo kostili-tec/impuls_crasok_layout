@@ -16,3 +16,12 @@ function openCloseFilters() {
 }
 
 openCloseFilters();
+
+function burgerMenu() {
+  const header = document.querySelector('.header');
+  const inputBtn = document.querySelector('#menu-toggle');
+  const burgerButton = header.querySelector('.menu-button-container');
+  burgerButton.addEventListener('click', () => console.log(inputBtn.checked));
+}
+
+burgerMenu();
