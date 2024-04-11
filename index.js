@@ -27,3 +27,18 @@ function burgerMenu() {
 }
 
 burgerMenu();
+
+function openFilters() {
+  const filters = document.querySelector('.catalog-container__filters-left');
+  const openButton = document.querySelector('#filter-button__all');
+  const closeButton = filters.querySelector('#close-filters-button');
+  openButton.addEventListener('click', () => {
+    filters.classList.add('filters-left__open');
+  })
+  closeButton.addEventListener('click', () => {
+    filters.classList.remove('filters-left__open');
+  })
+
+}
+
+openFilters();

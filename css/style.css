@@ -1480,7 +1480,7 @@ h3 {
 .filters-checkboxes {
   padding-top: 22px;
   margin-top: 22px;
-  border-top: 1px solid #F0F0F0;
+  border-top: 1px solid #f0f0f0;
 }
 
 .filters-checkboxes__title {
@@ -1598,6 +1598,10 @@ h3 {
   gap: 40px;
 }
 
+#filter-button__all {
+  display: none;
+}
+
 .filter-button__sort {
   position: relative;
   background: none;
@@ -1665,6 +1669,55 @@ h3 {
   background-color: #bb9078;
 }
 
+.close-filters {
+  width: 40px;
+  height: 40px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  -webkit-transform: translate(10px, -20px);
+          transform: translate(10px, -20px);
+  cursor: pointer;
+}
+.close-filters .line {
+  position: absolute;
+  width: 20px;
+  top: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: hsl(0, 0%, 0%);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.close-filters .line:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.filters-left__close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.filters-left__close div {
+  width: 20px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--font-dark);
+}
+.filters-left__close div:nth-child(1) {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.filters-left__close div:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 @media screen and (max-width: 1510px) {
   .catalog-container__filters-top {
     -webkit-box-orient: vertical;
@@ -1675,6 +1728,27 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .catalog-container__filters-left {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    min-width: 300px;
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    padding: 20px;
+    border: 1px solid var(--card-beige);
+  }
+  .filters-left__open {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  #filter-button__all {
+    display: block;
   }
 }
 .product-item {

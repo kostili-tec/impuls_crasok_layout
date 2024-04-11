@@ -37,6 +37,7 @@
       </div>
     </header>
     <main class="main">
+      <div class="blur-bg"></div>
       <section class="main-title">
         <div class="page-title__section container">
           <nav class="page-title__breadcumbs">
@@ -53,7 +54,15 @@
         <div class="section-catalog__container container">
           <div class="catalog-container__filters-left">
             <div class="filters-left__head">
-              <h3>Фильр</h3>
+              <!-- <div class="filters-left__close">
+                <div></div>
+                <div></div>
+              </div> -->
+              <div id="close-filters-button" class="close-filters">
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+              <h3>Фильтр</h3>
               <button class="filters-left__reset">Сбросить</button>
             </div>
             <div class="filters">
@@ -191,7 +200,9 @@
                 <button class="filter-button__number filter-button__count filter-button__count-active">12</button>
                 <button class="filter-button__number filter-button__count">24</button>
                 <button class="filter-button__number filter-button__count">36</button>
+                
               </div>
+              <button id="filter-button__all" class="filter-button__sort">Все фильтры</button>
             </div>
 
             <div class="items-catalog">

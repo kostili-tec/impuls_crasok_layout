@@ -151,8 +151,8 @@
 
 .filters-checkboxes {
   padding-top: 22px;
-  margin-top: 22px; 
-  border-top: 1px solid #F0F0F0;
+  margin-top: 22px;
+  border-top: 1px solid #f0f0f0;
 }
 
 .filters-checkboxes__title {
@@ -183,10 +183,13 @@
 
 .items-catalog {
   display: grid;
-  grid-template-columns: repeat(3, 285px);
+  // grid-template-columns: repeat(3, 285px);
+  grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
   grid-row-gap: 60px;
   width: 100%;
-  justify-content: space-between;
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: center;
   margin: 20px auto 40px;
 }
 
@@ -230,6 +233,10 @@
 .filter-buttons {
   display: flex;
   gap: 40px;
+}
+
+#filter-button__all {
+  display: none;
 }
 
 .filter-button__sort {
@@ -301,4 +308,74 @@
 .pagination-button__active {
   color: white;
   background-color: #bb9078;
+}
+
+.close-filters {
+  width: 40px;
+  height: 40px;
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  transform: translate(10px, -20px);
+  cursor: pointer;
+  
+  .line {
+    position: absolute;
+    width: 20px;
+    top: 0;
+    height: 3px;
+    border-radius: 2px;
+    background: hsl(0, 0%, 0%);
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(45deg);
+    
+    &:nth-child(2) {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  } 
+}
+
+.filters-left__close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform-origin: center;
+  div {
+    width: 20px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--font-dark);
+    &:nth-child(1) {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &:nth-child(2) {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1510px) {
+  .catalog-container__filters-top {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .catalog-container__filters-left {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    min-width: 300px;
+    transform: translateX(-300px);
+    transition: all 0.2s;
+    padding: 20px;
+    border: 1px solid var(--card-beige);
+  }
+
+  .filters-left__open {
+    transform: translateX(20px);
+  }
+  #filter-button__all {
+    display: block;
+  }
 }
