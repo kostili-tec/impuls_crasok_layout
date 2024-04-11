@@ -32,11 +32,19 @@ function openFilters() {
   const filters = document.querySelector('.catalog-container__filters-left');
   const openButton = document.querySelector('#filter-button__all');
   const closeButton = filters.querySelector('#close-filters-button');
+  const modalBg = document.querySelector('.modal-bg');
   openButton.addEventListener('click', () => {
+    modalBg.classList.add('modal-bg__open');
     filters.classList.add('filters-left__open');
   })
   closeButton.addEventListener('click', () => {
+    modalBg.classList.remove('modal-bg__open');
     filters.classList.remove('filters-left__open');
+  })
+  modalBg.addEventListener('click', () => {
+    modalBg.classList.remove('modal-bg__open');
+    filters.classList.remove('filters-left__open');
+
   })
 
 }
