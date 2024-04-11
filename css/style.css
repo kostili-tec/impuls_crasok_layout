@@ -398,7 +398,7 @@ h3 {
 .main-hero {
   width: 100%;
   height: 629px;
-  background-image: url("../../assets/bg/impuls-bg.jpg");
+  background-image: url("../assets/bg/impuls-bg.jpg");
   background-position: center center;
   background-size: cover;
   color: var(--font-dark);
