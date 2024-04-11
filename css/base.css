@@ -47,4 +47,10 @@ h3 {
 .map-iframe {
   width: 590px;
   height: 367px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 100px;
+  }
 }/*# sourceMappingURL=base.css.map */

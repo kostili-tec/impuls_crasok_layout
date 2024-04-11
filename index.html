@@ -15,7 +15,7 @@
           <img src="./assets/logo_header.png" alt="Импуль красок" class="header-logo" />
         </a>
       </div>
-       
+
       <div class="header-right">
         <nav class="header-menu">
           <ul>
@@ -31,7 +31,7 @@
         <div class="header-search">
           <img src="./assets/icons/search.svg" alt="поиск" />
         </div>
-        <input id="menu-toggle" type="checkbox" />     
+        <input id="menu-toggle" type="checkbox" />
         <label class="menu-button-container" for="menu-toggle">
           <div class="menu-button"></div>
         </label>
@@ -44,7 +44,7 @@
           <h2 class="main-hero__head2">Комплексное снабжение мебельных предприятий</h2>
         </div>
       </section>
-      <section class="main-advantages container">
+      <section class="main-advantages container mobile-container">
         <div class="advantages-item">
           <img class="advantages-item__img" src="./assets/icons/palette.svg" alt="Паллет" />
           <div class="advantages-item__text">
@@ -67,7 +67,7 @@
           </div>
         </div>
       </section>
-      <section class="main-catalog container">
+      <section class="main-catalog container mobile-container">
         <div class="catalog-items">
           <div class="catalog-items__top">
             <div class="catalog-item A">
@@ -194,18 +194,14 @@
               <div class="catalog-item__image-container"><img src="./assets/images/Frame 268.png" alt /></div>
             </div>
           </div>
-          <div class="catalog-items">
-            <!-- div.catalog-item*11>(div.catalog-item__image-container>img[src='./assets/images/'])+div.catalog-item__info>a>div>h4+div>span{в каталог}+img.arrow-icon[src="./assets/icons/arrow.svg"] -->
-          </div>
-          <div class="catalog-items__bottom"></div>
         </div>
       </section>
-      <section class="main-individual container">
+      <section class="main-individual container mobile-container">
         <div class="individual-hero">
           <h2>Индивидуальный подход<br />к каждому клиенту</h2>
         </div>
       </section>
-      <section class="main-news container">
+      <section class="main-news container mobile-container">
         <div class="news-container">
           <h3>Новости</h3>
           <div class="news-items">
@@ -250,7 +246,7 @@
           </div>
         </div>
       </section>
-      <section class="section-contacts container">
+      <section class="section-contacts container mobile-container">
         <div class="contacts-container">
           <div class="contacts-info">
             <h3 class="contacts-info__head">Контакты</h3>
@@ -290,7 +286,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-top container">
+      <div class="footer-top container mobile-container">
         <a href="/">
           <img src="./assets/logo_header.png" alt="Импульс красок" />
         </a>
@@ -304,7 +300,11 @@
           </ul>
         </nav>
         <form class="contact-form" action="">
-          <span><b>Остались вопросы?</b> Напишите нам</span>
+          <div>
+            <span><b>Остались вопросы?</b></span>
+            <span>Напишите нам</span>
+          </div>
+
           <input class="contact-form__input-text" type="text" name="" id="" placeholder="Как вас зовут?" />
           <input class="contact-form__input-text" type="tel" name="" id="" placeholder="Ваш номер телефона" />
           <input class="contact-form__input-button" type="button" value="Отправить" />

@@ -8,6 +8,7 @@
   height: 114px;
   padding-top: 10px;
   margin: auto;
+  z-index: 100;
 }
 
 .header-right {
@@ -131,7 +132,7 @@
   .header {
     position: fixed;
     background-color: var(--footer);
-    width: 100%;    
+    width: 100%;
   }
   .menu-button-container {
     display: flex;
