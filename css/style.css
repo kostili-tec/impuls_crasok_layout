@@ -250,6 +250,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 16px;
 }
 
 #menu-toggle {
@@ -326,7 +327,6 @@ h3 {
     display: flex;
   }
   .header-right {
-    width: 15%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
