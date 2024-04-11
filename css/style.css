@@ -318,6 +318,7 @@ h3 {
     position: fixed;
     background-color: var(--footer);
     width: 100%;
+    top: 0;
   }
   .menu-button-container {
     display: -webkit-box;
@@ -855,6 +856,8 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 80px auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -918,6 +921,8 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 21px;
   margin-top: 60px;
 }
@@ -1029,6 +1034,11 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
   }
+  .about-clients__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (max-width: 1420px) {
   .catalog-items__top {
@@ -1111,6 +1121,23 @@ h3 {
   .map-iframe {
     width: 100%;
   }
+  .main-title {
+    margin-top: 114px;
+  }
+  .about-advantages .advantages-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-advantages .advantages-item:nth-child(2) {
+    padding-left: 0;
+  }
+  .about-advantages .advantages-item:nth-child(3) {
+    padding-right: 0;
+  }
+  .about-advantages .advantages-item .advantages-item__text {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 920px) {
   .catalog-item {
@@ -1164,6 +1191,15 @@ h3 {
   .individual-hero h2 {
     font-size: 24px;
   }
+  .about-info__item {
+    gap: 30px;
+  }
+  .about-info__item div {
+    width: 100%;
+  }
+  .about-info__item div img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -1180,6 +1216,15 @@ h3 {
   }
   .individual-hero {
     padding: 50px;
+  }
+  .main-title .page-title__section h1 {
+    font-size: 32px;
+  }
+  .about-clients__item {
+    width: 100%;
+  }
+  .about-clients__item img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
