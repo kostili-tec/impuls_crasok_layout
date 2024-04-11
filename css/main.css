@@ -885,6 +885,15 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .main-hero__headers {
+    padding-left: 20px;
+  }
+  .main-hero__headers .main-hero__head1 {
+    font-size: 36px;
+  }
+  .main-hero__headers .main-hero__head2 {
+    font-size: 20px;
+  }
   .catalog-items__top,
   .catalog-items__bottom {
     gap: 0;
