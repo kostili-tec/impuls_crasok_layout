@@ -656,6 +656,27 @@
         flex-basis: 42%;
   }
 }
+@media screen and (max-width: 1510px) {
+  .contacts-page__contacts-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .contacts-page__contacts-container .contacts-page__info {
+    padding-top: 0;
+  }
+  .contacts-page__contacts-container .contacts-map {
+    width: 100%;
+  }
+  .contacts-page__contacts-container .contacts-map .map-iframe__contacts-page {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1420px) {
   .catalog-items__top {
     grid-template-columns: repeat(2, 1fr);
@@ -849,6 +870,14 @@
   }
   .about-clients__item img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .contacts-page__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (max-width: 480px) {

@@ -528,9 +528,6 @@
   .about-clients__items {
     justify-content: center;
   }
-  .stock-items {
-    // flex-direction: column;
-  }
   .stock-item {
     &:nth-child(1) {
       flex-basis: 55%;
@@ -540,6 +537,24 @@
     }
   }
 }
+
+@media screen and (max-width: 1510px) { 
+  .contacts-page__contacts-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    .contacts-page__info {
+      padding-top: 0;
+    }
+    .contacts-map {
+      width: 100%;
+      .map-iframe__contacts-page {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1420px) {
   .catalog-items__top {
     grid-template-columns: repeat(2, 1fr);
@@ -728,6 +743,9 @@
 }
 
 @media screen and (max-width: 660px) {
+  .contacts-page__info {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 480px) {
