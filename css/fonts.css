@@ -1,83 +1,83 @@
 @font-face {
   font-family: "Inder";
-  src: local("Inder"), local("Inder-Regular"), url("../../assets/fonts/Inder-Regular.ttf") format("truetype");
+  src: local("Inder"), local("Inder-Regular"), url("../assets/fonts/Inder-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: local("Inter Bold"), local("Inter-Bold"), url("../../assets/fonts/Inter-Bold.ttf") format("truetype");
+  src: local("Inter Bold"), local("Inter-Bold"), url("../assets/fonts/Inter-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: local("Inter Regular"), local("Inter-Regular"), url("../../assets/fonts/Inter-Regular.ttf") format("truetype");
+  src: local("Inter Regular"), local("Inter-Regular"), url("../assets/fonts/Inter-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Golos Text";
-  src: local("Golos Text Regular"), local("GolosText-Regular"), url("../../assets/fonts/GolosText-Regular.ttf") format("truetype");
+  src: local("Golos Text Regular"), local("GolosText-Regular"), url("../assets/fonts/GolosText-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: local("Raleway Regular"), local("Raleway-Regular"), url("../../assets/fonts/Raleway-Regular.ttf") format("truetype");
+  src: local("Raleway Regular"), local("Raleway-Regular"), url("../assets/fonts/Raleway-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url("../../assets/fonts/Raleway-SemiBold.ttf") format("truetype");
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url("../assets/fonts/Raleway-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat Light"), local("Montserrat-Light"), url("../../assets/fonts/Montserrat-Light.ttf") format("truetype");
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: local("Raleway Medium"), local("Raleway-Medium"), url("../../assets/fonts/Raleway-Medium.ttf") format("truetype");
+  src: local("Raleway Medium"), local("Raleway-Medium"), url("../assets/fonts/Raleway-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
