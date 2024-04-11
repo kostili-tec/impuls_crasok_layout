@@ -19,9 +19,11 @@ openCloseFilters();
 
 function burgerMenu() {
   const header = document.querySelector('.header');
-  const inputBtn = document.querySelector('#menu-toggle');
   const burgerButton = header.querySelector('.menu-button-container');
-  burgerButton.addEventListener('click', () => console.log(inputBtn.checked));
+  const headerMenu = header.querySelector('.header-menu');
+  burgerButton.addEventListener('click', () => {
+    headerMenu.classList.toggle('open-menu');    
+  });
 }
 
 burgerMenu();
