@@ -1,33 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Inder";
-  src: local("Inder"), local("Inder-Regular"), url("../assets/fonts/Inder-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: local("Inter Bold"), local("Inter-Bold"), url("../assets/fonts/Inter-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: local("Inter Regular"), local("Inter-Regular"), url("../assets/fonts/Inter-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Golos Text";
-  src: local("Golos Text Regular"), local("GolosText-Regular"), url("../assets/fonts/GolosText-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "Raleway";
   src: local("Raleway Regular"), local("Raleway-Regular"), url("../assets/fonts/Raleway-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -1676,6 +1648,7 @@ h3 {
 }
 
 .close-filters {
+  display: none;
   width: 40px;
   height: 40px;
   -webkit-transition: 0.2s ease-in-out;
@@ -1766,6 +1739,9 @@ h3 {
     border: 1px solid var(--card-beige);
     z-index: 300;
     top: 0;
+  }
+  .close-filters {
+    display: block;
   }
   .filters-left__open {
     -webkit-transform: translateX(0px);

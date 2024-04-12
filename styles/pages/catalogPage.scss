@@ -311,6 +311,7 @@
 }
 
 .close-filters {
+  display: none;
   width: 40px;
   height: 40px;
   transition: 0.2s ease-in-out;
@@ -388,6 +389,9 @@
     border: 1px solid var(--card-beige);
     z-index: 300;
     top: 0;
+  }
+  .close-filters {
+    display: block;
   }
 
   .filters-left__open {
