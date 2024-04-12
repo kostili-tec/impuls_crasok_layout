@@ -233,6 +233,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .product-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .product-slider-description {
     flex-direction: column;
   }
