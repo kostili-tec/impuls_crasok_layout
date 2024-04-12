@@ -3,9 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="../css/style.css" />
+
     <title>Прозрачные грунты | Импуль красок</title>
+    <style>   
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } 
+      .swiper-button-next, .swiper-button-prev {
+         color: var(--font-gray);
+      }
+      
+    </style>
   </head>
   <body>
     <header class="header container">
@@ -117,52 +137,71 @@
         </div>
       </section>
       <section class="related-items container">
-        <h2>Популярные товары</h2>
+        <div class="related-items__container">
+          <h2>Популярные товары</h2>
+          <div class="slider-container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <article class="swiper-slide related-slider__item">
+                  <a class="related-slider__item-link" href="">
+                    <div class="related-slider__img-container ">
+                      <img src="../assets/images/Frame 264.png" alt="" />
+                    </div>
+                    <p>Пленка п/э защитная (MTM-0160)</p>
+                  </a>
+                </article>
+                <article class="swiper-slide related-slider__item">
+                  <a class="related-slider__item-link" href="">
+                    <div class=" related-slider__img-container">
+                      <img src="../assets/images/Frame 264.png" alt="" />
+                    </div>
+                    <p>Лента маскирующая BOOMER 8050 желтая 40м х 50мм</p>
+                  </a>
+                </article>
+                <article class="swiper-slide related-slider__item">
+                  <a class=" related-slider__item-link" href="">
+                    <div class="related-slider__img-container">
+                      <img src="../assets/images/Frame 264.png" alt="" />
+                    </div>
+                    <p>Фильтр для защиты от органических газов и паров Jeta 6510</p>
+                  </a>
+                </article>
+                <article class="swiper-slide related-slider__item">
+                  <a class="related-slider__item-link" href="">
+                    <div class="related-slider__img-container">
+                      <img src="../assets/images/Frame 264.png" alt="" />
+                    </div>
+                    <p class="related-slider__item-description">
+                      Черные нескользящие одноразовые нитриловые перчатки JSN Natrix размер М.длина 240мм, толщина 0,15мм
+                    </p>
+                  </a>
+                </article>
+                <article class="swiper-slide related-slider__item">
+                  <a class="related-slider__item-link" href="">
+                    <div class="related-slider__img-container">
+                      <img src="../assets/images/Frame 264.png" alt="" />
+                    </div>
+                    <p class="related-slider__item-description">
+                      Черные нескользящие одноразовые нитриловые перчатки JSN Natrix размер М.длина 240мм, толщина 0,15мм
+                    </p>
+                  </a>
+                </article>
+                <article class="swiper-slide related-slider__item">
+                  <a class="related-slider__item-link" href="">
+                    <div class="related-slider__img-container">
+                      <img src="../assets/images/Frame 264.png" alt="" />
+                    </div>
+                    <p class="related-slider__item-description">
+                      Черные нескользящие одноразовые нитриловые перчатки JSN Natrix размер М.длина 240мм, толщина 0,15мм
+                    </p>
+                  </a>
+                </article>
+              </div>
+              
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-        <div class="related-slider__container">
-          <div class="related-slider__control" id="related-slider__left">
-            <img src="../assets/icons/slider-arrow.svg" alt="Налево" />
-          </div>
-
-          <div class="related-slider__items">
-            <article class="related-slider__item">
-              <a class="related-slider__item-link" href="">
-                <div class="related-slider__img-container">
-                  <img src="../assets/images/Frame 264.png" alt="" />
-                </div>
-                <p>Пленка п/э защитная (MTM-0160)</p>
-              </a>
-            </article>
-            <article class="related-slider__item">
-              <a class="related-slider__item-link" href="">
-                <div class="related-slider__img-container">
-                  <img src="../assets/images/Frame 264.png" alt="" />
-                </div>
-                <p>Лента маскирующая BOOMER 8050 желтая 40м х 50мм</p>
-              </a>
-            </article>
-            <article class="related-slider__item">
-              <a class="related-slider__item-link" href="">
-                <div class="related-slider__img-container">
-                  <img src="../assets/images/Frame 264.png" alt="" />
-                </div>
-                <p>Фильтр для защиты от органических газов и паров Jeta 6510</p>
-              </a>
-            </article>
-            <article class="related-slider__item">
-              <a class="related-slider__item-link" href="">
-                <div class="related-slider__img-container">
-                  <img src="../assets/images/Frame 264.png" alt="" />
-                </div>
-                <p class="related-slider__item-description">
-                  Черные нескользящие одноразовые нитриловые перчатки JSN Natrix размер М.длина 240мм, толщина 0,15мм
-                </p>
-              </a>
-            </article>
-          </div>
-
-          <div class="related-slider__control" id="related-slider__right">
-            <img src="../assets/icons/slider-arrow.svg" alt="Направо" />
           </div>
         </div>
       </section>
@@ -216,7 +255,31 @@
         </div>
       </div>
     </footer>
-    <script src="../index.js"></script>
     <script src="../js/catalogItemSliders.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true,     
+        breakpoints: {
+          1533: {
+            slidesPerView: 4,
+          },
+          1268: {
+            slidesPerView: 3
+          },
+          900: {
+            slidesPerView: 2
+          }
+        }
+        
+      });    
+      
+    </script>
   </body>
 </html>
