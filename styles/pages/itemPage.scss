@@ -316,3 +316,12 @@
     transform: translate(0px, -50px);
   }
 }
+
+@media screen and (max-width: 470px) { 
+  .slider-bottom {
+    .slider-bottom__img-container {
+      width: 60px;
+      height: 70px;
+    }
+  }
+}
